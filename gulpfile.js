@@ -5,8 +5,12 @@ var sass = require('gulp-sass');
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('default', [ 'sass' ]);
+gulp.task('sass:watch', function() {
+    gulp.watch('scss/**/*.scss', [ 'sass' ]);
+});
+
+gulp.task('default', [ 'sass:watch' ]);

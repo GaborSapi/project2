@@ -67,6 +67,7 @@ h1.logo{
 .header_container{
 	height: $full-width;
 	max-width: $max-width;
+    margin: 0 auto;
 }
 .search-field{
 			border-bottom: 2px solid #CCC;
@@ -75,17 +76,15 @@ h1.logo{
 			padding-bottom: 2px;
 }
 .body_container{
-	padding: 64px 0;
+	padding: 64px .5rem;
 	width: $full-width;
 	max-width: $max-width;
 	min-height: 100vh;
 	margin: 0 auto;
 }
 article{
-	margin: 0 .5rem .5rem .5rem;
-	width: calc(100% - 1rem);
-	height: calc(10.5rem + 1vh);
-	display: inline-block;
+	margin-bottom: .5rem;
+	
 }
 fieldset{
 	background-color:#fff;
