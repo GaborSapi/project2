@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.float-left, .float-right {
+  position: relative; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+* {
+  box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #2196f3; }
+
+html {
+  font-family: Corbel, sans-serif;
+  font-size: 16px; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  background-color: #e8e8e8; }
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 5px 10px #c1c1c1; }
+  header form input {
+    display: inline-table;
+    border: none;
+    outline: none; }
+    header form input[type="search"] {
+      height: 1rem; }
+    header form input[type="submit"] {
+      width: 1rem;
+      height: 1rem;
+      background-color: transparent;
+      background-image: url("../resources/search.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+
+h1.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  top: 5px;
+  font-weight: lighter; }
+  h1.logo span {
+    color: #2196f3;
+    font-size: 2rem;
+    font-weight: lighter; }
+
+.header_container {
+  height: 100%;
+  max-width: 1040px; }
+
+.search-field {
+  border-bottom: 2px solid #CCC;
+  position: relative;
+  top: 14px;
+  padding-bottom: 2px; }
+
+.body_container {
+  padding: 64px 0;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 100vh;
+  margin: 0 auto; }
+
+article {
+  margin: 0 .5rem .5rem .5rem;
+  width: calc($full-width - 1rem);
+  height: calc(10.5rem + 1vh);
+  display: inline-block; }
+
+fieldset {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 10px #696969;
+  padding: 1rem;
+  height: calc(10.5rem + 1vh); }
+
+textarea {
+  font-family: Corbel, sans-serif;
+  font-size: 1.25rem;
+  width: 100%;
+  height: 6rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #CCC;
+  margin-bottom: 1vh;
+  resize: none;
+  outline: none; }
+
+input[type="email"] {
+  font-family: Corbel, sans-serif;
+  width: 80%;
+  min-height: 22px;
+  font-size: 1.25rem;
+  height: 2.5rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #CCC;
+  outline: none; }
+
+input[value="ADD"] {
+  width: calc(20% - 3.2px);
+  min-height: 22px;
+  height: 2.5rem;
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 5px #696969; }
+
+footer {
+  height: 50px;
+  width: 100%;
+  border-top: solid 4px #dcd9d9;
+  background-color: white; }
+
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1040px; }
+
+.brankic {
+  color: #aaa; }
+
+.epamlogo {
+  height: 1.5rem;
+  position: relative;
+  bottom: 11px;
+  left: 7.25rem; }
+
+.copyright {
+  font-weight: bold;
+  position: relative;
+  top: 24px; }
+
+@media screen and (max-width: 360px) {
+  header form input[type="search"] {
+    width: 18%; }
+  h1 {
+    font-size: 16px; }
+    h1 span {
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+  article {
+    margin: 0 0 .5rem .5rem;
+    width: calc(50% - 0.75rem); }
+  .brankic {
+    bottom: 0.5rem; } }
+
+@media screen and (min-width: 1041px) {
+  .header_container {
+    height: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0; }
+  h1 {
+    left: 0;
+    transform: none;
+    margin: 0;
+    top: 12px; }
+  header form input[type="search"] {
+    right: 0; }
+  header form input[type="submit"] {
+    right: 0; }
+  article {
+    margin: 0 0 .5rem 0;
+    width: calc($full-width / 3 - .25rem); }
+  input[type="email"] {
+    width: 80%; }
+  input[value="ADD"] {
+    width: calc(20% - 3.2px);
+    font-size: 70%; } }

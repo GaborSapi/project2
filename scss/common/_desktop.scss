@@ -1,0 +1,40 @@
+@media screen and (min-width: 1041px) {
+	.header_container{
+		height: $full-width;
+		max-width: $max-width;
+		margin: 0 auto;
+		position: relative;
+		padding: 0;
+	}
+	h1{
+		left: 0;
+		transform: none;
+		margin: 0;
+		top: 12px;
+	}
+	header{
+			form{
+				input{
+					&[type="search"]{
+						right: 0;
+					}
+					 &[type="submit"]{
+						 right:0;
+					 }
+				}
+			}
+		}
+	.body_container{
+	}
+	article{
+		margin: 0 0 .5rem 0;
+		width: calc(100% / 3 - .25rem);
+	}
+	input[type="email"]{
+		width: 80%;
+	}
+	input[value="ADD"]{
+		width: calc(20% - 3.2px);
+		font-size: 70%;
+	}
+}

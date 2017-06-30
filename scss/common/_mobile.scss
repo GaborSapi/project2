@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #f5f5f5;
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: $base-color;
+}
+html{
+	font-family:$font-family;
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	position: relative;
+	background-color: #e8e8e8;
+}
+header{
+		width: $full-width;
+		height: 50px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background-color: white;
+		box-shadow: 0px 5px 10px #c1c1c1;
+
+		form{
+			input{
+				display: inline-table;
+				border: none;
+				outline: none;
+
+				&[type="search"]{
+							height: 1rem;
+				}
+				&[type="submit"]{
+					width: 1rem;
+					height: 1rem;
+					background-color: transparent;
+					background-image: url("../../resources/search.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+
+			}
+		}
+}
+h1.logo{
+		margin:0;
+		font-size: 1.5rem;
+		top: 5px;
+		font-weight: lighter;
+
+		span{
+			color:$base-color;
+			font-size: 2rem;
+			font-weight: lighter;
+		}
+}
+.header_container{
+	height: $full-width;
+	max-width: $max-width;
+}
+.search-field{
+			border-bottom: 2px solid #CCC;
+			position: relative;
+			top:14px;
+			padding-bottom: 2px;
+}
+.body_container{
+	padding: 64px 0;
+	width: $full-width;
+	max-width: $max-width;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+article{
+	margin: 0 .5rem .5rem .5rem;
+	width: calc(100% - 1rem);
+	height: calc(10.5rem + 1vh);
+	display: inline-block;
+}
+fieldset{
+	background-color:#fff;
+	border: none;
+	box-shadow: 0 0 10px #696969;
+	padding: 1rem;
+	height: calc(10.5rem + 1vh);
+}
+textarea{
+	font-family:$font-family;
+	font-size: 1.25rem;
+	width:$full-width;
+	height:6rem;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid #CCC;
+	margin-bottom:1vh;
+	resize: none;
+	outline: none;
+}
+input[type="email"]{
+	font-family:$font-family;
+	width: 80%;
+	min-height: 22px;
+	font-size: 1.25rem;
+	height:2.5rem;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid #CCC;
+	outline: none;
+}
+input[value="ADD"]{
+	width: calc(20% - 3.2px);
+	min-height: 22px;
+	height:2.5rem;
+	background-color:$base-color;
+	color:#fff;
+	font-weight:bold;
+	border: none;
+	box-shadow: 0 0 5px #696969;
+}
+footer{
+	height: 50px;
+	width: $full-width;
+	border-top: solid 4px #dcd9d9;
+	background-color: white;
+}
+.footer-wrapper {
+	margin: 0 auto;
+	max-width: $max-width;
+}
+.brankic{
+	color:#aaa;
+}
+.epamlogo{
+  height: 1.5rem;
+	position: relative;
+	bottom: 11px;
+	left: 7.25rem;
+}
+.copyright{
+	font-weight: bold;
+	position: relative;
+	top: 24px;
+}

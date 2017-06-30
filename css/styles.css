@@ -1,5 +1,17 @@
 /* Styles go here */
 
+.float-left, .float-right {
+	position: relative;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 /* mobile and up  */
 :root{
 	--baseColor: #2196f3;
@@ -38,20 +50,16 @@ header{
 		background-color: white;
 		box-shadow: 0px 5px 10px #c1c1c1;
 }
-h1{
+h1.logo{
 		margin:0;
-		font-size: 1.6rem;
-		position: absolute;
-		top: calc(50% - 0.12em);
-		left:50%;
-		transform: translate(-50%, -50%);
+		font-size: 1.5rem;
+		top: 5px;
 		font-weight: lighter;
-		transition: opacity .2s ease-in-out .5s;
 }
-h1 span{
-		color: var(--baseColor);
-		font-size: 2.1rem;
-		font-weight: lighter;
+h1.logo span{
+			color: var(--baseColor);
+			font-size: 2rem;
+			font-weight: lighter;
 }
 .header_container{
 	height: 100%;
@@ -60,52 +68,38 @@ h1 span{
 header form input{
 		display: inline-table;
 		border: none;
-		border-bottom: 2px solid #CCC;
 		outline: none;
 }
+.search-field{
+			border-bottom: 2px solid #CCC;
+			position: relative;
+			top:14px;
+			padding-bottom: 2px;
+}
 header form input[type="search"]{
-		width: 20%;
 		height: 1rem;
-		position: absolute;
-		top: 24px;
-		transition: width .2s ease-in-out .3s;
-		right:1.6rem;
-}
-header form input[type="search"]:focus{
-		width: calc(100% - 2.2rem);
-		border-bottom-color: var(--baseColor);
-}
-header form input:focus ~ input{
-		border-bottom-color: var(--baseColor);
-}
-header form input:focus + h1{
-	transition: opacity .2s ease-in-out;
-	opacity: 0;
 }
 header form input[type="submit"]{
 		width: 1rem;
 		height: 1rem;
-		position: absolute;
-		top:24px;
-		right: .6rem;
 		background-color: transparent;
 		background-image: url("../resources/search.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 }
 .body_container{
-	padding: calc(50px + .5rem) 0 calc(50px + .5rem) 0;
+	padding: 64px 0;
 	width: 100%;
 	max-width: 1040px;
+	min-height: 100vh;
 	margin: 0 auto;
-	flex-wrap: wrap;
 }
-
 article{
 	margin: 0 .5rem .5rem .5rem;
 	width: calc(100% - 1rem);
+	height: calc(10.5rem + 1vh);
+	display: inline-block;
 }
-
 fieldset{
 	background-color:#fff;
 	border: none;
@@ -115,7 +109,7 @@ fieldset{
 }
 textarea{
 	font-family:Corbel, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	width:100%;
 	height:6rem;
 	border-top:none;
@@ -130,7 +124,7 @@ input[type="email"]{
 	font-family:Corbel, sans-serif;
 	width: 80%;
 	min-height: 22px;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	height:2.5rem;
 	border-top:none;
 	border-left:none;
@@ -153,27 +147,24 @@ footer{
 	width: 100%;
 	border-top: solid 4px #dcd9d9;
 	background-color: white;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+}
+.footer-wrapper {
+	margin: 0 auto;
+	max-width: 1040px;
 }
 .brankic{
-	position:absolute;
-	bottom:0;
-	left:8px;
 	color:#aaa;
 }
 .epamlogo{
-	position: absolute;
   height: 1.5rem;
-	top: 0.5rem;
-	right:0.5rem;
+	position: relative;
+	bottom: 11px;
+	left: 7.25rem;
 }
 .copyright{
-	position:absolute;
-	top:0.5rem;
-	left:0.5rem;
 	font-weight: bold;
+	position: relative;
+	top: 24px;
 }
 /*small screen phone*/
 @media screen  and (max-width: 360px) {
@@ -189,16 +180,13 @@ footer{
 }
 /* tablet and up  */
 @media screen and (min-width: 601px) and (max-width: 1040px) {
-	.body_container{
-		display: flex;
-	}
 	article{
 		margin: 0 0 .5rem .5rem;
 		width: calc(50% - 0.75rem);
 		height: calc(10.5rem + 1vh);
 	}
 	.brankic{
-		bottom:0.3rem;
+		bottom:0.5rem;
 	}
 }
 /* desktop  */
@@ -222,19 +210,12 @@ footer{
 	header form input[type="search"]{
 		right:0;
 	}
-	header form input[type="search"]:focus{
-		width: 20%;
-	}
-	header form input:focus + h1{
-		opacity: 1;
-	}
 	.body_container{
-		display: flex;
-		justify-content: space-between;
 	}
 	article{
 		margin: 0 0 .5rem 0;
 		width: calc(100% / 3 - .25rem);
+		height: calc(10.5rem + 1vh);
 	}
 	input[type="email"]{
 		width: 80%;
@@ -242,19 +223,5 @@ footer{
 	input[value="ADD"]{
 		width: calc(20% - 3.2px);
 		font-size: 70%;
-	}
-	.brankic{
-		left: 20%;
-		top: 15px;
-	}
-	.copyright{
-		top: 15px;
-		left: calc(80% - 20rem);
-	;
-	}
-	.epamlogo{
-		position:absolute;
-		top: 12px;
-		right:20%;
 	}
 }

@@ -1,0 +1,16 @@
+
+.float-left, .float-right {
+	position: relative;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+$base-color: #2196f3;
+$full-width: 100%;
+$max-width: 1040px;
+$font-family: Corbel, sans-serif;

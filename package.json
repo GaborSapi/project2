@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "\u001b[D\u001bjs\u001b[C",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "sass": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sass": "^1.0.0-beta.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/GaborSapi/project2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
